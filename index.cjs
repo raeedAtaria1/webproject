@@ -25,7 +25,7 @@ app.use(express.static(path.join('frontEnd')));
 //change
 app.get('/', (req, res) => {
   
-  res.sendFile(path.join('/frontEnd/logIN.html'));
+  res.sendFile(path.join('frontEnd/logIN.html'));
   // res.setHeader("Access-Control-Allow-Credentials", "true");
 
 });
