@@ -21,12 +21,12 @@ admin.initializeApp({
 // Route to serve the TaskManagement component
 // Middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '..', 'frontEnd')));
+app.use(express.static(path.join('frontEnd')));
 //change
 app.get('/', (req, res) => {
   
-  // res.sendFile(path.join(__dirname, '../frontEnd/logIN.html'));
-  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.sendFile(path.join(logIN.html'));
+  // res.setHeader("Access-Control-Allow-Credentials", "true");
 
 });
 //the sigh-up function 
