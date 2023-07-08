@@ -21,11 +21,11 @@ admin.initializeApp({
 // Route to serve the TaskManagement component
 // Middleware
 app.use(express.json());
-app.use(express.static(path.join('frontEnd')));
+app.use(express.static(path.join(__dirname, '..', 'frontEnd')));
 //change
 app.get('/', (req, res) => {
   
-  res.sendFile(path.join('frontEnd/logIN.html'));
+  res.sendFile(path.join(__dirname, '../frontEnd/logIN.html'));
   // res.setHeader("Access-Control-Allow-Credentials", "true");
 
 });
