@@ -1,0 +1,45 @@
+
+#newTaskForm {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#newTaskForm input[type="text"],
+#newTaskForm input[type="datetime-local"],
+#newTaskForm textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#newTaskForm button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 40px;
+}
+.copyright {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+  .invert {
+    filter: invert(100%);
+  }
+  
