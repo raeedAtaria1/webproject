@@ -6,7 +6,10 @@ const ReactDOM = require('react-dom');
 const cors = require('cors');
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 3000; // Use environment variable or default to 3000
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
 app.use(cors());
 // Initialize Firebase Admin SDK
 const serviceAccount = require('./webapp-44c6b-firebase-adminsdk-8yipf-f80df382a8.json'); // Path to your service account key JSON file
@@ -22,8 +25,8 @@ app.use(express.static(path.join(__dirname, '..', 'frontEnd')));
 //change
 app.get('/', (req, res) => {
   
-  // res.sendFile(path.join(__dirname, '../frontEnd/logIN.html'));
-  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.sendFile(path.join(__dirname, '../frontEnd/logIN.html'));
+  // res.setHeader("Access-Control-Allow-Credentials", "true");
 
 });
 //the sigh-up function 
@@ -150,11 +153,6 @@ app.post('/login', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
-
 //add Task
 app.post('/addTask', async (req, res) => {
   const { formattedDateTime, taskDescription, dueDate, taskName, userEmail,status,adminEmail } = req.body;
