@@ -5,7 +5,7 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const app = express();
 const port = 8000;
-
+app.use(cors());
 // Initialize Firebase Admin SDK
 const serviceAccount = require('./webapp-44c6b-firebase-adminsdk-8yipf-f80df382a8.json'); // Path to your service account key JSON file
 admin.initializeApp({
@@ -19,7 +19,10 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '..', 'frontEnd')));
 //change
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontEnd/logIN.html'));
+  
+  // res.sendFile(path.join(__dirname, '../frontEnd/logIN.html'));
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+
 });
 //the sigh-up function 
 app.post('/signup', async (req, res) => {
