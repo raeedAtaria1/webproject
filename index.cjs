@@ -3,6 +3,8 @@ const admin = require('firebase-admin');
 const path = require('path');
 const React = require('react');
 const ReactDOM = require('react-dom');
+const cors = require('cors');
+
 const app = express();
 const port = 8000;
 app.use(cors());
@@ -283,5 +285,5 @@ app.put('/api/tasks/:id', async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).send('Internal Server Error');
-  }
+}
 });
