@@ -61,7 +61,7 @@ app.post('/signup', async (req, res) => {
     const newUserRef = await usersRef.add(newUser);
 
     // Redirect to userhomepage.html or any other page you want
-    // res.sendFile(path.join(__dirname, '/frontEnd/userhomepage.html'));
+    res.sendFile(path.join(__dirname, '/frontEnd/userhomepage.html'));
 
   } catch (error) {
     console.error(error);
