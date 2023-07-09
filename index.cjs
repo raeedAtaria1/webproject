@@ -62,6 +62,7 @@ app.post('/signup', async (req, res) => {
 
     // Redirect to userhomepage.html or any other page you want
     // res.sendFile(path.join(__dirname, '/frontEnd/userhomepage.html'));
+    res.redirect('/userHomePage.html');
 
   } catch (error) {
     console.error(error);
