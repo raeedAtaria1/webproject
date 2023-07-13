@@ -29,6 +29,34 @@ app.get('/', (req, res) => {
   // res.setHeader("Access-Control-Allow-Credentials", "true");
 
 });
+//get the taks status
+app.get('/tasks/status', async (req, res) => {
+  try {
+    const userEmail = req.headers.email;
+    const tasksRef = admin.firestore().collection('tasks');
+    const userQuerySnapshot = await tasksRef.where('userEmail', '==', userEmail).get();
+    const adminQuerySnapshot = await tasksRef.where('adminEmail', '==', userEmail).get();
+    
+    const querySnapshot = userQuerySnapshot.docs.concat(adminQuerySnapshot.docs);
+    
+    let ongoingTasks = 0;
+    let completedTasks = 0;
+
+    querySnapshot.forEach(doc => {
+      const task = doc.data();
+      if (task.status === 'Ongoing') {
+        ongoingTasks++;
+      } else if (task.status === 'Completed') {
+        completedTasks++;
+      }
+    });
+
+    res.json({ ongoingTasks, completedTasks });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
 //the sigh-up function 
 app.post('/signup', async (req, res) => {
   const { email, fullName, password, role, adminEmail } = req.body;
