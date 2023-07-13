@@ -19,7 +19,7 @@ form.addEventListener('submit', async (event) => {
     });
     if (response.ok) {
         localStorage.setItem('email', email);
-        window.location.href = '/userhomepage.html';
+        window.location.href = '/userHomePage.html';
     } else {
         const errorMessage = await response.text();
         alert(errorMessage);
