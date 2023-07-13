@@ -20,3 +20,13 @@
 .invert {
   filter: invert(100%);
 }
+body.dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="password"] {
+  color: black !important;
+}

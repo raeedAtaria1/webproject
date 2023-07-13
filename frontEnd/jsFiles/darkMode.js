@@ -20,12 +20,16 @@ $(document).ready(function() {
   function enableDarkMode() {
     $('body').addClass('dark-mode');
     $('.invert-color').addClass('invert');
+    $('body').css('color', 'white'); // Set text color to white
+    $('.table').css('color', 'white'); // Set text color inside the table to white
   }
 
   // Disable dark mode
   function disableDarkMode() {
     $('body').removeClass('dark-mode');
     $('.invert-color').removeClass('invert');
+    $('body').css('color', ''); // Remove text color
+    $('.table').css('color', ''); // Remove text color inside the table
   }
 
   // Set a cookie

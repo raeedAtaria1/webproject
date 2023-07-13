@@ -66,4 +66,17 @@ height: 40px;
   .invert {
     filter: invert(100%);
   }
+  body.dark-mode {
+    color: white; /* Set text color to white */
+  }
+  
+  .dark-mode table,
+  .dark-mode table th,
+  .dark-mode table td {
+    color: white; /* Set text color inside the table to white */
+  }
+  body.dark-mode * {
+    color: white !important;
+  }
+  
   

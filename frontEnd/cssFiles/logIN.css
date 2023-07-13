@@ -17,4 +17,10 @@
     background-color: #343a40;
     color: #f8f9fa;
   }
+  body.dark-mode * {
+    color: white !important;
+  }
+  body.dark-mode input[type="password"] {
+    color: black !important;
+  }
   
