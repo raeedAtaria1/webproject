@@ -55,4 +55,6 @@
   .invert {
     filter: invert(100%);
   }
-  
+   body.dark-mode * {
+    color: white !important;
+  }
