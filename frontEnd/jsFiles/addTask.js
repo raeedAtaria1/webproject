@@ -1,3 +1,19 @@
+function isDateValidAndGreaterThanToday(dateString) {
+    const today = new Date();
+    const inputDate = new Date(dateString);
+  
+    // Check if the input date is valid
+    if (isNaN(inputDate.getTime())) {
+      return false;
+    }
+  
+    // Check if the input date is greater than today
+    if (inputDate <= today) {
+      return false;
+    }
+  
+    return true;
+  }
     const role = localStorage.getItem('role');
     function goHome() {
     if (role === 'admin') {
@@ -106,6 +122,11 @@ form.addEventListener('submit', async (event) => {
     const formattedDateTime =
         `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}T` +
         `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+    // Check if the due date is valid and greater than today
+  if (!isDateValidAndGreaterThanToday(dueDate)) {
+    alert("Please enter a valid due date that is greater than today.");
+    return;
+  }
 
     try {
         
