@@ -57,6 +57,7 @@ app.get('/tasks/status', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
+
 //the sigh-up function 
 app.post('/signup', async (req, res) => {
   const { email, fullName, password, role, adminEmail } = req.body;
@@ -71,7 +72,7 @@ app.post('/signup', async (req, res) => {
     }
     // Check if the admin email exists
     if (adminEmail) {
-      const adminQuerySnapshot = await usersRef.where('email', '==', adminEmail).get();
+      const adminQuerySnapshot = await usersRef.where('email', '==', adminEmail).where('role', '==', 'admin').get();
       if (adminQuerySnapshot.empty) {
         res.status(400).send('Admin email does not exist');
         return;
@@ -89,7 +90,7 @@ app.post('/signup', async (req, res) => {
     const newUserRef = await usersRef.add(newUser);
 
     // Redirect to userhomepage.html or any other page you want
-    // res.sendFile(path.join(__dirname, '/frontEnd/userhomepage.html'));
+    // res.sendFile(path.join(__dirname, '../frontEnd/userhomepage.html'));
     res.redirect('/userHomePage.html');
 
   } catch (error) {
@@ -97,6 +98,7 @@ app.post('/signup', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
+
 
 
 
