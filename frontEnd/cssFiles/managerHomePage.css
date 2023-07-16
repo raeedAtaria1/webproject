@@ -54,7 +54,14 @@
   }
   .invert {
     filter: invert(100%);
-  }
-   body.dark-mode * {
+  } 
+  body.dark-mode * {
     color: white !important;
   }
+  body.dark-mode {
+    filter: invert(100%);
+  }
+  .highlight {
+    background-color: #FF6347 !important ; /* Orange-red background color for overdue tasks */
+  }
+  

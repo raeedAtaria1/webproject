@@ -24,7 +24,6 @@ if (taskStatus === 'Ongoing') {
 }
 });
 }
-
 async function fetchTasks() {
   try {
     const userEmail = localStorage.getItem('email');
@@ -39,24 +38,37 @@ async function fetchTasks() {
     }
 
     const tasks = await response.json();
-
     const tableBody = document.getElementById('taskTableBody');
     tableBody.innerHTML = '';
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set today's time to midnight
 
     tasks.forEach(task => {
       const row = document.createElement('tr');
       row.id = `task-${task.id}`;
+
+      // Separate the date and time parts of the due date
+      const [dueDatePart, dueTimePart] = task.dueDate.split('T');
+      const dueDate = new Date(dueDatePart);
+
+      // Check if the due date is earlier than today (ignore the time part)
+      if (dueDate < today) {
+        row.classList.add('highlight'); // Add the "highlight" class to overdue tasks
+      } else {
+        row.classList.add('clear-white'); // Add the "clear-white" class to other tasks
+      }
+
       row.innerHTML = `
         <td>${task.name}</td>
         <td>${task.description}</td>
-        <td>${task.dueDate}</td>
+        <td>${dueDatePart} (${dueTimePart})</td>
         <td><button class="btn btn-warning btn-sm text-white" onclick="editTask('${task.id}')">Edit</button></td>
         <td><button class="btn btn-sm btn-danger" onclick="removeTask('${task.id}')">Remove</button></td>
         <td>
-            <button class="btn btn-${task.status === 'Ongoing' ? 'primary' : 'success'}" onclick="updateTaskStatus('${task.id}')">
-${task.status === 'Ongoing' ? 'Ongoing' : 'Completed'}
-</button>
-
+          <button class="btn btn-${task.status === 'Ongoing' ? 'primary' : 'success'}" onclick="updateTaskStatus('${task.id}')">
+            ${task.status === 'Ongoing' ? 'Ongoing' : 'Completed'}
+          </button>
         </td>
       `;
       tableBody.appendChild(row);
@@ -65,6 +77,9 @@ ${task.status === 'Ongoing' ? 'Ongoing' : 'Completed'}
     console.error('An error occurred:', error);
   }
 }
+
+
+
 
 async function removeTask(taskId) {
   try {

@@ -22,4 +22,7 @@
   .invert {
     filter: invert(100%);
   }
-  
+
+body.dark-mode {
+  filter: invert(100%);
+}

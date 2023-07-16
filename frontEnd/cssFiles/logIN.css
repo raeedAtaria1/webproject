@@ -13,14 +13,88 @@
     text-align: center;
     margin-top: 20px;
   }
-  .dark-mode {
-    background-color: #343a40;
-    color: #f8f9fa;
-  }
-  body.dark-mode * {
-    color: white !important;
-  }
-  body.dark-mode input[type="password"] {
-    color: black !important;
-  }
-  
+  /* Styles for text in dark mode */
+body.dark-mode {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Styles for input elements in dark mode */
+body.dark-mode input[type="text"],
+body.dark-mode textarea,
+body.dark-mode input[type="datetime-local"] {
+  color: black; /* Set the color of the input text to black in dark mode */
+}
+
+/* Styles for the logo text and navigation links */
+.header-text, .nav-link {
+  color: white;
+}
+
+/* Styles for the form labels */
+.form-group label {
+  color: white;
+}
+
+/* Styles for the email input in dark mode */
+body.dark-mode .form-control {
+  color: black; /* Set the color of the email input to black in dark mode */
+}
+/* Styles for text in dark mode */
+body.dark-mode {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Styles for input elements in dark mode */
+body.dark-mode input[type="text"],
+body.dark-mode textarea,
+body.dark-mode input[type="datetime-local"] {
+  color: black; /* Set the color of the input text to black in dark mode */
+}
+
+/* Styles for the logo text and navigation links */
+.header-text, .nav-link {
+  color: white;
+}
+
+/* Styles for the form labels */
+.form-group label {
+  color: white;
+}
+/* Styles for text in dark mode */
+body.dark-mode {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Styles for input elements in dark mode */
+body.dark-mode input[type="text"],
+body.dark-mode textarea,
+body.dark-mode input[type="datetime-local"] {
+  color: black; /* Set the color of the input text to black in dark mode */
+}
+
+/* Styles for the logo text and navigation links */
+.header-text, .nav-link {
+  color: white;
+}
+
+/* Styles for the form labels */
+.form-group label {
+  color: white;
+}
+
+/* Styles for the email input in dark mode */
+body.dark-mode .form-control {
+  color: black; /* Set the color of the email input to black in dark mode */
+}
+
+/* Styles for the email help text in dark mode */
+body.dark-mode .form-text {
+  color: white; /* Set the color of the email help text to white in dark mode */
+}
+
+body.dark-mode {
+  filter: invert(100%);
+}

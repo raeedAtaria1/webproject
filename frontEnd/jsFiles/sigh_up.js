@@ -1,3 +1,17 @@
+  document.addEventListener('DOMContentLoaded', () => {
+    const workerCheckbox = document.getElementById('workerCheckbox');
+    const adminEmailField = document.getElementById('adminEmailField');
+
+    workerCheckbox.addEventListener('change', () => {
+      if (workerCheckbox.checked) {
+        adminEmailField.style.display = 'block'; // Show the admin email field
+        document.getElementById('InputAdminMail').setAttribute('required', ''); // Make it mandatory
+      } else {
+        adminEmailField.style.display = 'none'; // Hide the admin email field
+        document.getElementById('InputAdminMail').removeAttribute('required'); // Make it optional
+      }
+    });
+  });
 
 const form = document.getElementById('signupForm');
 form.addEventListener('submit', async (event) => {

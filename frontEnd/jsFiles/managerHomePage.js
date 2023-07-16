@@ -23,7 +23,6 @@ if (taskStatus === 'Ongoing') {
 }
 });
 }
-
 async function fetchTasks() {
   try {
     const userEmail = localStorage.getItem('email');
@@ -41,10 +40,23 @@ async function fetchTasks() {
     const tableBody = document.getElementById('taskTableBody');
     tableBody.innerHTML = '';
 
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set today's time to midnight
+
     tasks.forEach(task => {
-      console.log(task);
       const row = document.createElement('tr');
       row.id = `task-${task.id}`;
+
+      // Convert the due date to a Date object and ignore the time part
+      const dueDate = new Date(task.dueDate);
+      dueDate.setHours(0, 0, 0, 0); // Set due date's time to midnight
+
+      if (dueDate < today) {
+        row.classList.add('highlight'); // Add the "highlight" class to overdue tasks
+      } else {
+        row.classList.add('no-highlight'); // Add the "no-highlight" class to other tasks
+      }
+
       row.innerHTML = `
         <td>${task.name}</td>
         <td>${task.description}</td>
@@ -52,11 +64,11 @@ async function fetchTasks() {
         <td><button class="btn btn-warning btn-sm text-white" onclick="editTask('${task.id}')">Edit</button></td>
         <td><button class="btn btn-sm btn-danger" onclick="removeTask('${task.id}')">Remove</button></td>
         <td>
-            <button class="btn btn-${task.status === 'Ongoing' ? 'primary' : 'success'}" onclick="updateTaskStatus('${task.id}')">
-${task.status === 'Ongoing' ? 'Ongoing' : 'Completed'}
-</button>
+          <button class="btn btn-${task.status === 'Ongoing' ? 'primary' : 'success'}" onclick="updateTaskStatus('${task.id}')">
+            ${task.status === 'Ongoing' ? 'Ongoing' : 'Completed'}
+          </button>
         </td>
-        <td> ${task.userEmail}</td>
+        <td>${task.userEmail}</td>
       `;
       tableBody.appendChild(row);
     });
@@ -64,6 +76,8 @@ ${task.status === 'Ongoing' ? 'Ongoing' : 'Completed'}
     console.error('An error occurred:', error);
   }
 }
+
+
 
 async function removeTask(taskId) {
   try {

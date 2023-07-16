@@ -1,3 +1,4 @@
+
 function isDateValidAndGreaterThanToday(dateString) {
     const today = new Date();
     const inputDate = new Date(dateString);

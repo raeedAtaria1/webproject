@@ -66,17 +66,14 @@ height: 40px;
   .invert {
     filter: invert(100%);
   }
-  body.dark-mode {
-    color: white; /* Set text color to white */
-  }
   
-  .dark-mode table,
-  .dark-mode table th,
-  .dark-mode table td {
-    color: white; /* Set text color inside the table to white */
-  }
-  body.dark-mode * {
-    color: white !important;
-  }
-  
-  
+
+/* Invert colors in dark mode */
+body.dark-mode {
+  filter: invert(100%);
+}
+/* Add a class to highlight overdue tasks */
+
+.highlight {
+  background-color: #FF6347 !important ; /* Orange-red background color for overdue tasks */
+}

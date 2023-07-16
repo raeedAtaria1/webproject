@@ -1,24 +1,4 @@
 
-#newTaskForm {
-    background-color: #FFF;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#newTaskForm input[type="text"],
-#newTaskForm input[type="datetime-local"],
-#newTaskForm textarea {
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-}
-
-#newTaskForm button[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -42,4 +22,16 @@
   .invert {
     filter: invert(100%);
   }
+  /* Styles for the email input in dark mode */
+  body.dark-mode .form-control {
+    color: black; /* Set the color of the email input to black in dark mode */
+  }
   
+/* Add custom styles to the Logout button */
+.nav-item {
+    margin-left: 10px; /* Add some spacing between menu items */
+}
+body.dark-mode {
+    filter: invert(100%);
+  }
+

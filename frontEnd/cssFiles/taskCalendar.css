@@ -38,10 +38,12 @@ background-color: #f0f0f0;
   text-align: center;
   margin-top: 20px;
 }
+
 .dark-mode {
   background-color: #343a40;
   color: #f8f9fa;
 }
-.invert {
+/* Invert colors in dark mode */
+body.dark-mode {
   filter: invert(100%);
 }
