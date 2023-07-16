@@ -71,7 +71,7 @@ app.post('/signup', async (req, res) => {
       return;
     }
     // Check if the admin email exists
-    if (adminEmail) {
+    if (adminEmail!="noAdmin" ) {
       const adminQuerySnapshot = await usersRef.where('email', '==', adminEmail).where('role', '==', 'admin').get();
       if (adminQuerySnapshot.empty) {
         res.status(400).send('Admin email does not exist');
