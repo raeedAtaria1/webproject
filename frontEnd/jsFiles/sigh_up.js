@@ -7,6 +7,8 @@
         adminEmailField.style.display = 'block'; // Show the admin email field
         document.getElementById('InputAdminMail').setAttribute('required', ''); // Make it mandatory
       } else {
+        document.getElementById('InputAdminMail').value = ''; // Clear the admin email field
+
         adminEmailField.style.display = 'none'; // Hide the admin email field
         document.getElementById('InputAdminMail').removeAttribute('required'); // Make it optional
       }
@@ -20,9 +22,11 @@ form.addEventListener('submit', async (event) => {
     const fullName = form.elements.fullName.value;
     const email = form.elements.email.value;
     const password = form.elements.password.value;
-    const adminEmail = form.elements.InputAdminMail.value || 'noAdmin';
+    let adminEmail = form.elements.InputAdminMail.value || 'noAdmin';
+    if( form.elements.InputAdminMail.value=="")
+           adminEmail='noAdmin';
     const role="user";
-
+    console.log(adminEmail);
     try {
     const response = await fetch('/signup', {
         method: 'POST',
