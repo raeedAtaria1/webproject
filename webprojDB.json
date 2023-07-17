@@ -1,0 +1,327 @@
+{
+  "collection": "tasks",
+  "data": [
+    {
+      "DocumentID": "70G9zFWJo1fx1nIUe6dr",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-09T08:39",
+      "description": "csvdvd",
+      "dueDate": "2023-07-29T08:38",
+      "name": "bbnncheck last",
+      "status": "Ongoing",
+      "userEmail": "da@da"
+    },
+    {
+      "DocumentID": "CwRV0LVzMHGFVbEqHo9G",
+      "adminEmail": "a@a",
+      "createdAt": "2023-06-24T20:17",
+      "description": "dsdsddv",
+      "dueDate": "2023-06-30T20:17",
+      "name": "mine",
+      "status": "Ongoing",
+      "userEmail": "a@a"
+    },
+    {
+      "DocumentID": "EZ3fb2LzsI0Vd6VATwMI",
+      "adminEmail": "a@a",
+      "createdAt": "2023-06-17",
+      "description": "ddsgd",
+      "dueDate": "2023-06-30T17:19",
+      "name": "new23",
+      "status": "Completed",
+      "userEmail": "da@da"
+    },
+    {
+      "DocumentID": "EiM3Gtpa6GCiAcldblE0",
+      "adminEmail": "a@a",
+      "createdAt": "2023-05-31T20:33",
+      "description": "bfb",
+      "dueDate": "2023-08-21T20:33",
+      "name": "fbfbf",
+      "status": "Completed",
+      "userEmail": "da@da"
+    },
+    {
+      "DocumentID": "ExR5FcJ1Mu0KoFqQdcXX",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-16T16:02",
+      "description": "knjjnnj",
+      "dueDate": "2023-07-28T16:02",
+      "name": "njjjnnj",
+      "status": "Ongoing",
+      "userEmail": "u@u"
+    },
+    {
+      "DocumentID": "NwhQXQX9Pg1a6gn24FPF",
+      "adminEmail": "admin@ikea.com",
+      "createdAt": "2023-07-16T22:22",
+      "description": "testing",
+      "dueDate": "2023-08-05T22:22",
+      "name": "test2",
+      "status": "Ongoing",
+      "userEmail": "d@d1"
+    },
+    {
+      "DocumentID": "VI3VlurszyLVNG9FPcQL",
+      "adminEmail": "noAdmin",
+      "createdAt": "2023-06-20T22:25",
+      "description": "we",
+      "dueDate": "2023-06-20T23:25",
+      "name": "hi123",
+      "status": "Ongoing",
+      "userEmail": "raeda@l7lwe"
+    },
+    {
+      "DocumentID": "VpxaNBl46zUym2PLdkiH",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-09T08:37",
+      "description": "jhjbn",
+      "dueDate": "2023-07-26T08:37",
+      "name": "new2023",
+      "status": "Ongoing",
+      "userEmail": "u@u"
+    },
+    {
+      "DocumentID": "YAQNgW4yufu74qjV7tbp",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-16T16:23",
+      "description": ",ll",
+      "dueDate": "2023-07-25T16:23",
+      "name": "jnjnnj",
+      "status": "Completed",
+      "userEmail": "u@u"
+    },
+    {
+      "DocumentID": "YeR9eyRTRuljqs6n9GKD",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-16T21:18",
+      "description": "עעעע",
+      "dueDate": "2023-07-17T21:18",
+      "name": "אלגברה",
+      "status": "Ongoing",
+      "userEmail": "nasreen.saed04@gmail.com"
+    },
+    {
+      "DocumentID": "bJOBIpGqnBS5aORBnZDX",
+      "adminEmail": "admin@ikea.com",
+      "createdAt": "2023-07-16T22:23",
+      "description": "testing",
+      "dueDate": "2023-08-04T22:23",
+      "name": "test4",
+      "status": "Ongoing",
+      "userEmail": "rawiataria@icloud.com"
+    },
+    {
+      "DocumentID": "dQxEv3fKUZ557hadszRK",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-16T21:19",
+      "description": "טעעע",
+      "dueDate": "2023-07-28T21:19",
+      "name": "שששש",
+      "status": "Ongoing",
+      "userEmail": "nasreen.saed04@gmail.com"
+    },
+    {
+      "DocumentID": "eEB45HYO0mBwM4ruetuU",
+      "adminEmail": "a@a",
+      "createdAt": "2023-05-31T20:33",
+      "description": "dvvdvd",
+      "dueDate": "2023-06-03T20:32",
+      "name": "dvdvd",
+      "status": "Ongoing",
+      "userEmail": "da@da"
+    },
+    {
+      "DocumentID": "hAyI7emwxJozYvNKNhdV",
+      "adminEmail": "admin@ikea.com",
+      "createdAt": "2023-07-16T22:21",
+      "description": "testing",
+      "dueDate": "2023-07-17T22:21",
+      "name": "test1",
+      "status": "Ongoing",
+      "userEmail": "u@u.com"
+    },
+    {
+      "DocumentID": "iJanQmH6epU1mPz74KP5",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-08T23:12",
+      "description": "Hhuu",
+      "dueDate": "2023-07-08T23:12",
+      "name": "Ghhh",
+      "status": "Ongoing",
+      "userEmail": "da@da"
+    },
+    {
+      "DocumentID": "l7IjNqZiCl1Okvu6015Z",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-13T21:50",
+      "description": "fdadf",
+      "dueDate": "2023-02-28T21:49",
+      "name": "fdfgdf",
+      "status": "Ongoing",
+      "userEmail": "u@u"
+    },
+    {
+      "DocumentID": "pg86S7Zp0hG2fTXqDqJZ",
+      "adminEmail": "a@a",
+      "createdAt": "2023-07-16T19:07",
+      "description": "new",
+      "dueDate": "2023-07-20T19:07",
+      "name": "hi",
+      "status": "Ongoing",
+      "userEmail": "u@u"
+    },
+    {
+      "DocumentID": "rDYo1GvrdSXIDDDvXSwN",
+      "adminEmail": "a@a",
+      "createdAt": "2023-05-31T20:25",
+      "description": "fgfgg",
+      "dueDate": "2023-06-03T20:25",
+      "name": "fff",
+      "status": "Completed",
+      "userEmail": "a@a"
+    }
+  ]
+}
+{
+  "collection": "users",
+  "data": [
+    {
+      "DocumentID": "1",
+      "adminEmail": "noAdmin",
+      "email": "admin@ikea.com",
+      "fullName": "raeed",
+      "password": "1",
+      "role": "admin"
+    },
+    {
+      "DocumentID": "1MHa27Gq7ey4LGsQer9V",
+      "adminEmail": "u@u",
+      "email": "odayataria@gmail.com",
+      "fullName": "Odai Ataria",
+      "password": "Oo1231234",
+      "role": "user"
+    },
+    {
+      "DocumentID": "8LAp81WMi7oGt7uoMAeB",
+      "adminEmail": "admin@ikea.com",
+      "email": "d@d",
+      "fullName": "dani",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "FuDOPMAy6SdS0oWHYXXZ",
+      "adminEmail": "admin@ikea.com",
+      "email": "nasreen.saed04@gmail.com",
+      "fullName": "nasreen saed",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "GMFjXrT5aif84c5AZYoz",
+      "adminEmail": "admin@ikea.com",
+      "email": "newA123@jmkm",
+      "fullName": "newA",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "JicvR0FouqZq3RbD4Eyf",
+      "adminEmail": "noAdmin",
+      "email": "raeed@raeed",
+      "fullName": "Raeed",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "LsOmJ3BhBnsTc2tb2QrE",
+      "adminEmail": "noAdmin",
+      "email": "raeed@new3",
+      "fullName": "jhjjnnj",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "OKUQzIonwjJCBcEShPj9",
+      "adminEmail": "admin@ikea.com",
+      "email": "raeed@raeed12",
+      "fullName": "raeed@checking",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "VrUr7lcMD5WZscmC5xTU",
+      "adminEmail": "admin@ikea.com",
+      "email": "u@u.com",
+      "fullName": "raeed",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "WmvpsA0rtnwFz3JR5gd2",
+      "adminEmail": "admin@ikea.com",
+      "email": "rawiataria@icloud.com",
+      "fullName": "Rawi ataria",
+      "password": "Rr1231234",
+      "role": "user"
+    },
+    {
+      "DocumentID": "bj0JlSSiGhBB3keqWzkA",
+      "adminEmail": "admin@ikea.com",
+      "email": "d@d1",
+      "fullName": "daniel2",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "m1UGioPdh2NmIXANYHdQ",
+      "adminEmail": "noAdmin",
+      "email": "raeed@raeed1",
+      "fullName": "Raeed",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "puzehhlCrjAAHU2RRyqy",
+      "adminEmail": "admin@ikea.com",
+      "email": "raeed@raeed123",
+      "fullName": "raeed@checking",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "qski9mT7jurtokDmN6ER",
+      "adminEmail": "admin@ikea.com",
+      "email": "raeed@just",
+      "fullName": "raeed_check",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "DocumentID": "tFPvg644rb4SVVeAZvq3",
+      "adminEmail": "noAdmin",
+      "email": "haya.ataria@gmail.com",
+      "fullName": "Haya Ataria",
+      "password": "hayaat",
+      "role": "user"
+    },
+    {
+      "DocumentID": "veryImportant",
+      "adminEmail": "",
+      "email": "noAdmin",
+      "fullName": "",
+      "password": "",
+      "role": ""
+    },
+    {
+      "DocumentID": "wutztSQfZg88Q4sGMI54",
+      "adminEmail": "noAdmin",
+      "email": "gbvb@gfgf1",
+      "fullName": "gbvb@gfgf",
+      "password": "1",
+      "role": "user"
+    }
+  ]
+}
+
